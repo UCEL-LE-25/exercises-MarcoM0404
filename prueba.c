@@ -4,13 +4,13 @@
 
 
 struct Estudiante {
-    char nombre[50];
+    char nombre[20];
     int edad;
     float nota_final;
 };
 
 int main() {
-    struct Estudiante estudiantes[100];
+    struct Estudiante estudiantes[10];
     int cantidad = 0;
     int opcion;
 
@@ -27,11 +27,11 @@ int main() {
         switch (opcion) {
             case 1:
 
-                if (cantidad >= 100) {
+                if (cantidad >= 10) {
                     printf("No se pueden agregar más estudiantes.\n");
                     break;
                 }
-                printf("Nombre (una palabra): ");
+                printf("Nombre: ");
                 scanf("%s", estudiantes[cantidad].nombre);
                 printf("Edad: ");
                 scanf("%d", &estudiantes[cantidad].edad);
