@@ -63,7 +63,7 @@ int main() {
                 break;
 
             case 4:
-                printf("Saliendo del programa...\n");
+                printf("Saliendo del programa.\n");
                 break;
 
             default:
